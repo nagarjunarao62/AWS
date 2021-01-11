@@ -1,0 +1,209 @@
+
+https://global.gotomeeting.com/join/606257941
+
+------------------------------------------------------------
+04.01.2021
+
+AWS Account >>>>>>>  aws.amazon.com
+
+			Email address
+			Debit/credit 
+			
+	
+
+where ?????
+
+				Region >>>>> 
+				Availability Zone >>>>> Phy DC which is owning by AWS 
+				
+				Every region there are min of 2 or 3 AZ >>>>>> HA 
+				
+
+
+Lab 1 >>>>>>
+
+						VPC >>>>> CLoud based DC which is owning by you 
+						
+						
+
+---------------------------------------------------------
+05.01.2021		
+
+					VPC 
+					SUbnet
+					ROute Table 
+					Internet GW 
+					NAT Gateway
+					etc.,
+					
+					
+					RUnning
+					O/S 
+					VM 
+					PhyH/W
+
+
+Own Network >>>>>> VPC 
+Separate space 
+Internal cables 
+Security 
+Internet 
+
+
+
+VPC Regional based service 
+
+Pre-req 
+
+			XX - Location >>>> Region >>>> London 
+			XX - Size >>>>> 200  >>>> 250+
+			
+			
+			IP 
+			
+			10.0.0.0
+			10.0.0.1
+			10.0.0.2
+			
+			
+			CIDR >>>>> X.X.X.X…
+-----------------------------------------
+1/6/2021
+
+VPC: A cloud based datacenter where you can deploy your Servers 
+
+Subnet: Which help you to get register with AZ as well as making a small pieces of networks in your VPC.
+
+Please remember: We can create many Subnets in single AZ but we cant create many AZ in single Subnet.
+
+
+CIDR Format - X.X.X.X/X
+Manual Subnet Formula 2 ^ (32 - ??) = 2 ^ ? = ???
+[2:45 AM, 1/6/2021] Mahesh@AWS TRAINER: Subnet Online Calculators
+http://www.davidc.net/sites/default/subnets/subnets.html
+https://www.site24x7.com/tools/ipv4-subnetcalculator.html
+[2:45 AM, 1/6/2021] Mahesh@AWS TRAINER: What is IPv4 and IPv6?
+IPv4 is 32 bit binary number while IPv6 is 128 bit binary number address. 
+IPv4 address are separated by periods while IPv6 address are separated by colons.
+Example:
+IPv4: 10.0.0.165
+IPv6: 2001:0db8:0000:0000:0000:ff00:0042:7879
+[2:45 AM, 1/6/2021] Mahesh@AWS TRAINER: There is fixed 5 IP reservation upon each subnet creation, purpose of each: 
+
+1st IP - Network address 
+2nd IP - Reserved for VPC Router
+3rd IP - Reserved by AWS for mapping to the Amazon-provided DNS
+4th IP - Reserved for future purpose
+5th IP (Last IP of your Subnet) - Network broadcast address. We do not support broadcast in a VPC, therefore we reserve this address
+
+-----------------------------------------------------------
+07.01.2021
+
+				when you create VPC, is there any sub components are creating automatically ????
+				
+				DHCP Options set 
+				Main RT 
+				Main NACL 
+				Default SG 
+				
+				
+				NACL Vs SG 
+				
+				
+				communication between subnets??
+				
+				
+				Public and Private &&&& Critical and non-critical 
+				Security etc., 
+				
+				
+				
+				?????
+				
+				??????
+				
+				
+				One IGW for one VPC &&& Vice Versa 
+				
+	
+	
+08.01.21
+
+			what happened to Private Subnet ??
+			how many ways ??
+			
+			
+			Private subnets servers wants to download patches from internet ???
+			
+			there is on VPC already created who has created?
+			
+			can I delete?
+			can I launch my prod servers in "that" VPC
+			
+			COnluclusion of Lab 1 ::: VPC 
+			
+			Intro to Lab 2 *
+
+
+Assignment 1 >>>>> 
+			
+			1 - 3 Regions 
+			2 - Launch 3 VPC in that 3 Regions but*** 
+			3 - THree diff CIDR Range 
+			4 - FIrst VPC 
+							- 3 Subnets 
+							- 2 Must be same, equal size, 1 can be diff size 
+							
+			5 - Second VPC 
+							- Two equal subnets 
+							- Delete the 2nd Subnets 
+							- and than make that range into two equal subnets 
+			6 - Third VPC 
+							- Create 4 equal Subnets 
+							- Delete 4th subnet and leave it as it is.
+							
+							
+			http://www.davidc.net/sites/default/subnets/subnets.html
+-----
+11.01.2021
+
+				EC2 >>>>> 750 hours in a MOnth 
+				30GB EBS 
+				1 CPU or 1 GB RAM 
+				
+				
+O/S  >>>>> AMI >>>> 3 benefits 
+RAM/CPU >>>>>> INstane Type >>>> t2.micro  >>>> 1 CPU/ 1 RAM 
+Network >>>>>> How many EC2, VPC and SUbnet 
+HDD >>>> Storage >>> EBS 
+Security  >>>> SG 
+Authentication >>>>> User Name and PWD >>> User Name : Predefined depend upon your O/S  &&& PWD >> ENcripted KeyPair 
+
+Windows >>> Administrator
+RHEL >>>> Ec2-user 
+Ubuntu >>>> UBuntu 
+Centos >>> Centos 
+etc., 
+
+
+
+18.134.155.163
+
+
+
+
+- 3 EC2 instance 
+- 2 will be windows 
+- 1 will be linux 
+- 2 will be launching in public subnet 
+- 1 will be launching in private subnet 
+- what is Private Vs Public Vs EIP >>>>>>> 
+
+					Private IP >>>>> Internal Communication, with in your VPC, Free of cost 
+					Public IP >>>>>> Outside VPC, Free of cost. Non-persistent. 
+					EIP		>>>>>>> Outside VPC, Chargable whenever you're not using 
+					
+					
+- Backup Strategy 
+- Volume Encryption
+-etc.,
