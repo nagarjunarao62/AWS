@@ -125,7 +125,7 @@ IPv6: 2001:0db8:0000:0000:0000:ff00:0042:7879
 				
 				One IGW for one VPC &&& Vice Versa 
 				
-	
+-------------------------------------------------------------------------------------------
 	
 08.01.21
 
@@ -164,7 +164,7 @@ Assignment 1 >>>>>
 							
 							
 			http://www.davidc.net/sites/default/subnets/subnets.html
------
+---------------------------------------------------------------------------------------
 11.01.2021
 
 				EC2 >>>>> 750 hours in a MOnth 
@@ -207,3 +207,32 @@ etc.,
 - Backup Strategy 
 - Volume Encryption
 -etc.,
+
+-----------------------------------------------------------------------------------------
+12.01.2021		
+		
+			HOw to launch a EC2 (Windows)
+			
+			Public IP >>> 18.133.186.143
+			
+			RDP
+							
+							
+			EC2 is not responding 
+					>>>>>> Server status 
+					>>>>>> SG >>> 3389 
+					>>>>>> SUbnet 
+					>>>>>> SUbnet association RT 
+					>>>>>> RT route update with IGW 
+					
+							
+			
+						
+
+								200 servers 
+								
+								test
+								dev 
+								pre-prod
+								prod
+------------------------------------------------------------------------------------------
