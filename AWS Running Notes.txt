@@ -236,3 +236,26 @@ etc.,
 								pre-prod
 								prod
 ------------------------------------------------------------------------------------------
+14.01.2021
+
+				
+		Backup Strategy EC2 
+			
+			1 more ec2 instance Private SUbnet 
+			
+									>>>>> Jump Server 
+									>>>>> VPN
+									>>>>> DirectConnect
+									>>>>> VPC Peering 
+									>>>>> ??????????
+			
+			
+		
+		1 . O/S Updates or Upgrades   >>>>> AMI Level Backup  >>>> EC2 Image 
+		2.  Application Updates or Upgrades  >>>>>> EBS Level Backup >>>>> Snapshot 
+		
+		
+		C:\ 30 
+		D:\ 40 
+		E:\ 10
+		F:\ 5
