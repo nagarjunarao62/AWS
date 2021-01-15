@@ -259,3 +259,25 @@ etc.,
 		D:\ 40 
 		E:\ 10
 		F:\ 5
+---------------------------------------------------------------------------------------------
+15.01.2021
+
+			
+		>>>>> VPN
+		
+						3 Types 
+									2 can be possible only in the real-time but not in the lab 
+									1 can be possible in the lab, ?????
+									
+									
+		>>>>> Assignment
+
+				
+				
+				Phy 
+				Vir
+				Soft 
+				
+				Lab >>>>> Soft VPN >>>>> OpenVPN >>>>> EC2 Marketplace >>>>>> VPC 
+				
+				Prove >>>>> Private IPs are accessible from outside
