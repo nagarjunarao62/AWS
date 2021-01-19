@@ -283,3 +283,8 @@ etc.,
 				Lab >>>>> Soft VPN >>>>> OpenVPN >>>>> EC2 Marketplace >>>>>> VPC 
 				
 				Prove >>>>> Private IPs are accessible from outside
+----------------------------------------------------------------------------
+18.01.2021
+Tue - Private IP >>>>>> VPN
+				
+				Username >>>> openvpnas
